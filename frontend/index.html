@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script type='text/javascript' src="./Scripts/login-register.js" defer></script>
+    <title>Xelp-Project</title>
+</head>
+
+<body>
+    <div class="container">
+        <form method="POST">
+            <label for="userId">UserId/Mail:</label>
+            <input type="text" name="userId" id="userId" autocomplete="off" required>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" autocomplete="off" required>
+            <input type="button" value="Login" id="login-btn" onclick="checkLogin()">
+        </form>
+        <div id="loginStatus"></div>
+        <div class="signup-block">
+            <p>
+                Not a member yet?
+                <a href="./register.html"><button id="register-btn"> SignUp</button></a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
